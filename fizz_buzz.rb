@@ -1,7 +1,7 @@
 class FizzBuzz
 
-  def self.run(number)
-    if number == 3
+  def self.callout(count)
+    if count == 3
       'Fizz'
     end
   end
