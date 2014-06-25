@@ -21,17 +21,30 @@
       it 'returns FizzBuzz when we put in 15' do
         expect(FizzBuzz.callout(15)).to eq 'FizzBuzz'
       end
+    end
 
+    describe '.by_three?' do
+      it 'takes the number 3 and returns true' do
+        expect(FizzBuzz.by_three?(3)).to eq true
+      end
+      it 'takes the number 2 and returns false' do
+        expect(FizzBuzz.by_three?(2)).to eq false
+      end
+      it 'takes the number 6 and returns true' do
+        expect(FizzBuzz.by_three?(6)).to eq true
+      end
+    end
+
+    describe '.by_five?' do
+      it 'takes the number 5 and returns true' do
+        expect(FizzBuzz.by_five?(5)).to eq true
+      end
+      it 'takes the number 4 and returns false' do
+        expect(FizzBuzz.by_five?(4)).to eq false
+      end
     end
 
   end
-
-
-
-
-
-
-
 
 
   # describe FizzBuzz, 'the new hot game' do

@@ -1,28 +1,26 @@
 class FizzBuzz
 
   def self.callout(count)
-    if count % 3 == 0 && count % 5 == 0
+    if by_three?(count) && by_five?(count)
       'FizzBuzz'
-    elsif count % 3 == 0
+    elsif by_three?(count)
       'Fizz'
-    elsif count % 5 == 0
+    elsif by_five?(count)
       'Buzz'
     else
     count
     end
   end
 
+  def self.by_three?(number)
+    number % 3 == 0
+  end
+
+  def self.by_five?(number)
+    number % 5 == 0
+  end
+
 end
-
-
-
-
-
-
-
-
-
-
 
 
 
